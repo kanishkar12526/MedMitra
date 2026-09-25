@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 1. Background Medical Cross -->
+    <path android:pathData="M48,30h12v48h-12zM30,48h48v12h-48z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="30.0"
+                android:startY="30.0"
+                android:endX="78.0"
+                android:endY="78.0">
+                <item android:color="#3538BDF8" android:offset="0.0" />
+                <item android:color="#2010B981" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- 2. Diagonally Rotated Glassmorphic Capsule/Pill -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:rotation="-30">
+
+        <!-- Left Half: Cyan / Sky Blue Gradient -->
+        <path android:pathData="M54,43H43a11,11 0 0,0 0,22H54z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="32.0"
+                    android:startY="43.0"
+                    android:endX="54.0"
+                    android:endY="65.0">
+                    <item android:color="#0EA5E9" android:offset="0.0" />
+                    <item android:color="#38BDF8" android:offset="1.0" />
+                </gradient>
+            </aapt:attr>
+        </path>
+
+        <!-- Right Half: Emerald / Teal Gradient -->
+        <path android:pathData="M54,43H65a11,11 0 0,1 0,22H54z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="54.0"
+                    android:startY="43.0"
+                    android:endX="76.0"
+                    android:endY="65.0">
+                    <item android:color="#10B981" android:offset="0.0" />
+                    <item android:color="#2DD4BF" android:offset="1.0" />
+                </gradient>
+            </aapt:attr>
+        </path>
+
+        <!-- Center Pill Split Divider -->
+        <path
+            android:pathData="M54,43V65"
+            android:strokeWidth="1.5"
+            android:strokeColor="#FFFFFF"
+            android:strokeAlpha="0.7" />
+
+        <!-- Top Glass Highlight Rim -->
+        <path
+            android:pathData="M36,48a8,8 0 0,1 36,0"
+            android:strokeWidth="1.8"
+            android:strokeColor="#FFFFFF"
+            android:strokeAlpha="0.6"
+            android:strokeLineCap="round" />
+
+        <!-- Outer Pill Glow Contour -->
+        <path
+            android:pathData="M43,43H65a11,11 0 0,1 0,22H43a11,11 0 0,1 0,-22z"
+            android:strokeWidth="1.2"
+            android:strokeColor="#E0F2FE"
+            android:strokeAlpha="0.85" />
+    </group>
+
+    <!-- 3. Heartbeat / ECG Pulse Line -->
+    <!-- Outer Glow Stroke -->
+    <path
+        android:pathData="M18,54L34,54L38,42L44,66L50,34L56,72L62,47L66,54L90,54"
+        android:strokeWidth="5"
+        android:strokeColor="#3000F0FF"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <!-- Core Bright White/Cyan Stroke -->
+    <path
+        android:pathData="M18,54L34,54L38,42L44,66L50,34L56,72L62,47L66,54L90,54"
+        android:strokeWidth="2.5"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Pulse Peak Highlight Dot -->
+    <path
+        android:pathData="M50,32a2,2 0 1,0 0.001,0z"
+        android:fillColor="#38BDF8" />
+
+    <!-- 4. Modern Glassmorphic Sparkle Accents -->
+    <!-- Top-Right Sparkle -->
+    <path
+        android:pathData="M75,24L76.5,27.5L80,29L76.5,30.5L75,34L73.5,30.5L70,29L73.5,27.5z"
+        android:fillColor="#FFFFFF" />
+    <!-- Bottom-Left Sparkle -->
+    <path
+        android:pathData="M28,73L29.2,75.2L31.5,76.4L29.2,77.6L28,79.8L26.8,77.6L24.5,76.4L26.8,75.2z"
+        android:fillColor="#38BDF8" />
+</vector>
